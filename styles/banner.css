@@ -1,138 +1,126 @@
-/* styles/banner.css */
-@mixin responsive($property, $min, $max) {
-  @media (max-width: 375px) {
-    #{$property}: calc(#{$min}px - 0.1vw);
-  }
-
-  @media (min-width: 1440px) {
-    #{$property}: calc(#{$max}px + 0.1vw);
-  }
-}
-
 .banner {
-  display: flex;
-  background-color: #1F2229;
-  justify-content: center;
-  padding: 56px 162px 0px 162px;
-  height: 551px;
-  gap: 205px;
+    display: flex;
+    background-color: #1F2229;
+    justify-content: center;
+    padding: 56px 162px 0px 162px;
+    height: 551px;
+    gap: 205px;
 }
 
 .banner__aside {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
 
 .banner__aside__semi__first {
-  color: white;
-  padding-top: 27px;
-  font-size: clamp(18px, 4vw, 20px);
-  font-family: 'Tele2 text';
-  @include responsive(margin-block-end, 40, 140); 
-}
-
-.banner__aside__title {
-  color: white;
-  padding-top: 48px;
-  font-size: 68px;
-  margin: 0;
-  font-family: 'Stencil';
-}
-
-.banner__aside__title__span {
-  color: #5BB7E3;
-  padding-top: 48px;
-  font-size: 68px;
-  margin: 0;
-}
-
-.banner__aside__semi__second {
-  color: white;
-  padding-top: 24px;
-  font-size: clamp(18px, 4vw, 20px);
-  font-family: 'Tele2 text';
-}
-
-.banner__aside__button {
-  margin-top: 56px;
-  width: 209px;
-  height: 60px;
-  border-radius: 30px;
-  color: rgba(31, 34, 41, 1);
-  font-size: 16px;
-  font-weight: 700;
-  font-family: 'Tele2 text';
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-.banner__aside__button:focus {
-  transform: scale(0.98);
-}
-
-.banner__aside__button:active {
-  transform: scale(0.95);
-  background-color: #4A9ED9;
-}
-
-.banner__aside__button:hover {
-  background-color: #5BB7E3;
-}
-
-.banner__img {
-  width: 584px;
-  height: 551px;
-}
-
-@media (max-width: 1470px) {
-  .banner__aside__semi__first {
     color: white;
     padding-top: 27px;
     font-size: clamp(18px, 4vw, 20px);
     font-family: 'Tele2 text';
-    white-space: nowrap;
-  }
+}
 
-  .banner__aside__title {
+.banner__aside__title {
     color: white;
     padding-top: 48px;
     font-size: 68px;
     margin: 0;
     font-family: 'Stencil';
-    white-space: nowrap;
-  }
+}
+
+.banner__aside__title__span {
+    color: #5BB7E3;
+    padding-top: 48px;
+    font-size: 68px;
+    margin: 0;
+}
+
+.banner__aside__semi__second {
+    color: white;
+    padding-top: 24px;
+    font-size: clamp(18px, 4vw, 20px);
+    font-family: 'Tele2 text';
+}
+
+.banner__aside__button {
+    margin-top: 56px;
+    width: 209px;
+    height: 60px;
+    border-radius: 30px;
+    color: rgba(31, 34, 41, 1);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Tele2 text';
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.banner__aside__button:focus {
+    transform: scale(0.98);
+}
+
+.banner__aside__button:active {
+    transform: scale(0.95);
+    background-color: #4A9ED9;
+}
+
+.banner__aside__button:hover {
+    background-color: #5BB7E3;
+}
+
+.banner__img {
+    width: 584px;
+    height: 551px;
+}
+
+@media (max-width: 1470px) {
+    .banner__aside__semi__first {
+        color: white;
+        padding-top: 27px;
+        font-size: clamp(18px, 4vw, 20px);
+        font-family: 'Tele2 text';
+        white-space: nowrap;
+    }
+    
+    .banner__aside__title {
+        color: white;
+        padding-top: 48px;
+        font-size: 68px;
+        margin: 0;
+        font-family: 'Stencil';
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 1250px) {
-  .banner {
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2229;
-    align-items: left;
-    justify-content: center;
-    padding: 16px;
-    height: 100%;
-    gap: 48px;
-  }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        background-color: #1F2229;
+        align-items: left;
+        justify-content: center;
+        padding: 16px;
+        height: 100%;
+        gap: 48px;
+    }
 
-  .banner__aside__title {
-    padding-top: 40px;
-    font-size: clamp(36px, 4vw, 68px);
-  }
+    .banner__aside__title {
+        padding-top: 40px;
+        font-size: clamp(36px, 4vw, 68px);
+    }
 
-  .banner__aside__semi__second {
-    padding-top: 16px;
-  }
+    .banner__aside__semi__second {
+        padding-top: 16px;
+    }
 
-  .banner__aside__title__span {
-    padding-top: 40px;
-    font-size: clamp(36px, 4vw, 68px);
-  }
+    .banner__aside__title__span {
+        padding-top: 40px;
+        font-size: clamp(36px, 4vw, 68px);
+    }
 
-  .banner__img {
-    width: 316px;
-    height: 333px;
-  }
+    .banner__img {
+        width: 316px;
+        height: 333px;
+    }
 }
