@@ -1,3 +1,10 @@
+@import './src/styles/advertisement.css';
+@import './src/styles/banner.css';
+@import './src/styles/footer.css';
+@import './src/styles/header.css';
+@import './src/styles/promo.css';
+@import './src/styles/store.css';
+
 body {
     margin: 0;
 }
