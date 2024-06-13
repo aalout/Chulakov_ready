@@ -76,4 +76,9 @@
         height: 239px;
         margin-right: 0;
     }
+
+    .store__aside__button {
+        margin: 0 auto;
+        margin-top: 48px;
+    }
 }
