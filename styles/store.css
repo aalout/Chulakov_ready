@@ -1,0 +1,79 @@
+.store {
+    padding-top: 150px;
+    background-color: #1F2229;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 118px;
+}
+
+.store__aside {
+    max-width: 513px;
+}
+
+.store__aside__h2 {
+    color: white;
+    font-size: clamp(24px, 4vw, 40px);
+    font-weight: 700;
+    font-family: 'Tele2 title';
+}
+
+.store__aside__p {
+    color: white;
+    font-size: clamp(18px, 4vw, 20px);
+    font-weight: 400;
+    padding-top: 30px;
+    font-family: 'Tele2 text';
+}
+
+.store__aside__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 218px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(31, 34, 41, 1);
+    margin-top: 48px;
+    cursor: pointer;
+    font-family: 'Tele2 text';
+    transition: all 0.5s ease;
+}
+
+.store__aside__button:focus {
+    transform: scale(0.98);
+}
+
+.store__aside__button:active {
+    transform: scale(0.95);
+    background-color: #4A9ED9;
+}
+
+.store__aside__button:hover {
+    background-color: #5BB7E3;
+}
+
+.store__img {
+    width: 359px;
+    height: 373px;
+    margin-right: 100px;
+}
+
+@media (max-width: 1250px) {
+    .store {
+        padding: 16px;
+        padding-top: 72px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .store__img {
+        width: 230px;
+        height: 239px;
+        margin-right: 0;
+    }
+}

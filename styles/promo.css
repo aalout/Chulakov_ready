@@ -1,0 +1,205 @@
+.promo {
+    display: flex;
+    justify-content: center;
+    gap: 132px;
+    background-color: #1F2229;
+    padding: 150px 162px 0px 162px;
+}
+
+.promo__input {
+    display: flex;
+    flex-direction: column;
+    max-width: 348px;
+}
+
+.promo__input__title {
+    font-size: clamp(24px, 4vw, 40px);
+    font-weight: 700;
+    color: white;
+    font-family: 'Tele2 title';
+}
+
+.promo__input__title__span {
+    color: #5BB7E3;
+}
+
+.promo__input__phone {
+    background-color: rgba(31, 34, 41, 0);
+    border: 0px;
+    border-bottom: 1px solid rgba(143, 147, 153, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 64px;
+    font-family: 'Tele2 text';
+}
+
+.promo__input__ppd {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.promo__input__ppd__label {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .promo__input__ppd__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .promo__input__ppd__checkbox {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .promo__input__ppd__input:checked + .promo__input__ppd__checkbox::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 7px;
+    width: 8px;
+    height: 12px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+  }
+  
+  .promo__input__ppd__text {
+    margin-left: 30px;
+  }
+
+.promo__input__ppd__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Tele2 text';
+}
+
+.promo__input__ppd__text__link {
+    color: white;
+    text-decoration: underline;
+}
+
+.promo__input__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 218px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(31, 34, 41, 1);
+    margin-top: 32px;
+    cursor: pointer;
+    font-family: 'Tele2 text';
+    transition: all 0.5s ease;
+}
+
+.promo__input__button:focus {
+    transform: scale(0.98);
+}
+
+.promo__input__button:active {
+    transform: scale(0.95);
+    background-color: #4A9ED9;
+}
+
+.promo__input__button:hover {
+    background-color: #5BB7E3;
+}
+
+.promo__input__details {
+    display: none;
+    gap: 12px;
+    align-items: center;
+    width: 348px;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 48px;
+    background-color: rgba(38, 43, 54, 0.5);
+}
+
+.promo__input__details__img {
+    padding-left: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+.promo__input__details__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Tele2 text';
+}
+
+.promo__instruction {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 598px;
+}
+
+.promo__instruction__part {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.promo__instruction__part__img {
+    width: 80px;
+    height: 80px;
+}
+
+.promo__instruction__part__text {
+    font-size: clamp(18px, 4vw, 20px);
+    font-weight: 400;
+    color: white;
+    font-family: 'Tele2 text';
+}
+
+@media (max-width: 1250px) {
+    .promo {
+        flex-direction: column;
+        padding: 16px;
+        padding-top: 72px;
+        gap: 40px;
+    }
+
+    .promo__instruction__part {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin: 0;
+    }
+
+    .promo__instruction {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 100%;
+    }
+
+    .promo__input {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .promo__instruction__part__img {
+        width: 56px;
+        height: 56px;
+    }
+}

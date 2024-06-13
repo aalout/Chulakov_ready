@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="../../styles/promo.css"> 
+<section class="promo">
+    <aside class="promo__input">
+        <h2 class="promo__input__title">Несколько шагов <br/><span class="promo__input__title__span">и 1 ТБ — ваш</span></h2>
+        <input class="promo__input__phone" type="tel" placeholder="Номер телефона" onfocus="if (this.value === '') this.value = '+7';"/>
+        <div class="promo__input__ppd">
+            <div class="promo__input__ppd">
+  <label class="promo__input__ppd__label">
+    <input type="checkbox" class="promo__input__ppd__input" />
+    <span class="promo__input__ppd__checkbox"></span>
+  </label>
+</div>
+            <p class="promo__input__ppd__text">Даю согласие на обработку персональных данных. <span><a class="promo__input__ppd__text__link" href="#">Условия соглашения.</a></span></p>
+        </div>
+        <button class="promo__input__button" disabled>Выслать промокод</button>
+        <div class="promo__input__details" style="display: none;">
+            <img class="promo__input__details__img" src="/success.svg" alt="success"/>
+            <p class="promo__input__details__text">Промокод выслан на ваш номер</p>
+        </div>
+    </aside>
+    <aside class="promo__instruction">
+        <figure class="promo__instruction__part">
+            <img class="promo__instruction__part__img" src="/first_step.svg" alt="first"/>
+            <figcaption class="promo__instruction__part__text">Ведите свой номер телефона, затем дождитесь смс с промокодом для получения Тб</figcaption>
+        </figure>
+
+        <figure class="promo__instruction__part">
+            <img class="promo__instruction__part__img" src="/second_step.svg" alt="second"/>
+            <figcaption class="promo__instruction__part__text">Перейдите на сайт Tele2 и активируйте промокод при подключении на тариф «Мой Онлайн+»</figcaption>
+        </figure>
+
+        <figure class="promo__instruction__part">
+            <img class="promo__instruction__part__img" src="/third_step.svg" alt="third"/>
+            <figcaption class="promo__instruction__part__text">Используйте свой подарочный ТБ от Tele2 в течение всего года</figcaption>
+        </figure>
+    </aside>
+</section>
+
+<script>
+  const phoneInput = document.querySelector('.promo__input__phone');
+  const button = document.querySelector('.promo__input__button');
+  const details = document.querySelector('.promo__input__details');
+
+  phoneInput.addEventListener('input', () => {
+    if (phoneInput.value.length < 12) {
+      button.disabled = true;
+    } else {
+      button.disabled = false;
+    }
+  });
+
+  button.addEventListener('click', () => {
+    details.style.display = 'flex';
+  });
+</script>

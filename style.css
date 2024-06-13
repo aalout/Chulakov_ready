@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url('./public/fonts/standardctstencil-bold.otf');
+  }
+
+@font-face {
+    font-family: 'Tele2 text';
+    src: url('./public/fonts/tele2-textsans-short-regular.ttf');
+  }
+
+@font-face {
+    font-family: 'Tele2 title';
+    src: url('./public/fonts/tele2displayserif-bold.otf');
+  }
+
+/* header */
+
+
+/* banner */
+
+
+/* advertisement */
+
+
+
+/* promo */
+
+
+/* store */
+
+
+/* footer */
+
