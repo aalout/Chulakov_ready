@@ -4,6 +4,7 @@ import browserslist from 'browserslist';
 import handlebars from 'vite-plugin-handlebars'; 
 
 export default defineConfig({
+  base: "/Chulakov_ready",
   plugins: [
     handlebars({
       partialDirectory: 'src/partials', 
