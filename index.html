@@ -5,18 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tele2</title>
   <link rel="icon" type="image" href="/Chulakov_ready/assets/Logo-B1fPin0f.png"/>
-  <link rel="stylesheet" crossorigin href="/Chulakov_ready/assets/index-BrKUCulc.css">
+  <link rel="stylesheet" crossorigin href="/Chulakov_ready/assets/index-DNBO4WK5.css">
 </head>
 <body>
-  <link rel="stylesheet" href="../styles/header.css"> 
-     
-  <header class="header">
-      <a href="/"><img class="header__img" alt="Logo" src="/Chulakov_ready/Logo.png"/></a>
-      <nav class="header__nav">
-          <img class="header__nav img" alt="Location" src="/Chulakov_ready/Location.png"/>
-          <p class="header__nav text">Санкт-Петербург</p>
-      </nav>
+  <link rel="stylesheet" href="../styles/header.css">  
+      
+  <header class="header"> 
+      <a href="/"><img class="header__img" alt="Logo" src="/Chulakov_ready/Logo.png"/></a> 
+      <nav class="header__nav"> 
+          <img class="header__nav img" alt="Location" src="/Chulakov_ready/Location.png"/> 
+          <a href="#" class="header__nav__text" id="region-link">Санкт-Петербург</a> 
+      </nav> 
   </header>
+  
+  <aside id="region-modal" class="modal">
+    <div class="modal__content">
+      <p class="modal__content__p">Ваш регион - Санкт-Петербург?</p>
+      <button class="modal__content__button__first" id="confirm-region">Да, верно</button>
+      <button class="modal__content__button__second">Изменить регион</button>
+    </div>
+  </aside>
+  
+  <script>
+    const regionLink = document.getElementById('region-link');
+    const regionModal = document.getElementById('region-modal');
+    const confirmRegion = document.getElementById('confirm-region');
+    const changeRegion = document.getElementById('change-region');
+  
+    regionLink.addEventListener('click', (event) => {
+      event.preventDefault(); 
+      regionModal.style.display = 'block';
+    });
+  
+    confirmRegion.addEventListener('click', () => {
+      regionModal.style.display = 'none';
+    });
+  
+    changeRegion.addEventListener('click', () => {
+      //Здесь будет переход на страницу с выбором региона, список которых должен подгружаться по идее с бд и при выборе он должен прикрепляться к пользователю
+    });
+  </script>
   <main>
     <link rel="stylesheet" href="../styles/banner.css"> 
     <section class="banner">
